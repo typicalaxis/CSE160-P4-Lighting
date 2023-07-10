@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>assign4</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <p id = "performance"> XXX </p>
+    <p> Animation
+    <button type="button" id = "onButton">On</button>
+    <button type="button" id = "offButton">Off</button>
+
+    <p>
+    Light x <input type="range" min="-500" max="500" value="0" class="slider" id="lightSlideX">
+    Light y <input type="range" min="100" max="500" value="100" class="slider" id="lightSlideY">
+    Light z <input type="range" min="-500" max="500" value="-200" class="slider" id="lightSlideZ">
+
+    <p>
+      Light r <input type="range" min="0" max="255" value="255" class="slider" id="lightSlideR">
+      Light g <input type="range" min="0" max="255" value="255" class="slider" id="lightSlideG">
+      Light b <input type="range" min="0" max="255" value="255" class="slider" id="lightSlideB">
+
+    <p> 
+      <button type="button" id = "normalOn">Normal On</button>
+      <button type="button" id = "normalOff">Normal Off</button>
+
+      <p> 
+      <button type="button" id = "lightOn">Light On</button>
+      <button type="button" id = "lightOff">Light Off</button>
+      <button type="button" id = "spotOn">Spotlight On</button>
+      <button type="button" id = "spotOff">Spotlight Off</button>
+    
+    <p>
+    Tail Slider <input type="range" min="-45" max="45" value="0" class="slider" id="tail1Slide">
+    Tail Tip Slider <input type="range" min="-45" max="45" value="0" class="slider" id="tail2Slide">
+  
+    <p>
+    Camera Angle <input type="range" min="0" max="90" value="5" class="slider" id="angleSlide">
+ 
+   
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix-cse160.js"></script>
+    <script src="Cone.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Triangle2.js"></script>
+    <script src="Animal.js"></script>
+    <script src="Camera2.js"></script>
+    <script src="lighting2.js"></script>
+
+    
+  </body>
+</html>
